@@ -41,3 +41,6 @@ function stop() {
 function restart() {
   interval = setInterval("slidesShow()", 2000);
 }
+
+carousel.addEventListener("mouseenter",stop);
+carousel.addEventListener("mouseleave",restart);
