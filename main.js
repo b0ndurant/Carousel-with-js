@@ -28,3 +28,8 @@ function otherSlide(nb) {
   slideIndex += nb - 1;
   slidesShow();
 }
+
+function currentSlide(position) {
+  slideIndex = position ;
+  slidesShow();
+}
