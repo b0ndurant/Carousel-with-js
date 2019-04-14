@@ -23,3 +23,8 @@ function slidesShow() {
   dots[slideIndex - 1].classList.add('active');
   slideIndex++;
 }
+
+function otherSlide(nb) {
+  slideIndex += nb - 1;
+  slidesShow();
+}
