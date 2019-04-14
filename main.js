@@ -33,3 +33,11 @@ function currentSlide(position) {
   slideIndex = position ;
   slidesShow();
 }
+
+function stop() {
+  clearInterval(interval);
+}
+
+function restart() {
+  interval = setInterval("slidesShow()", 2000);
+}
